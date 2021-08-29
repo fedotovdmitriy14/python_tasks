@@ -5,7 +5,7 @@ class NonNegative:
 
     def __set__(self, instance, value):
         if value < 0:
-            raise ValueError("Cannont be negative")
+            raise ValueError("Cannot be negative")
         instance.__dict__[self.name] = value 
  
     def __set_name__(self, owner, name):
