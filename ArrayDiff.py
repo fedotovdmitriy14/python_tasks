@@ -7,23 +7,6 @@
 
 # array_diff([1,2,2,2,3],[2]) == [1,3]
 
-# import re
-
-# def array_diff(a, b):
-#     a_str = ",".join(str(item) for item in a)
-#     result = []
-#     for i in b:
-#         # while re.findall(rf"\b(?=\w){str(i)}\b(?!\w)", a_str):
-#         while re.findall(str(i), a_str):
-#             a_str = a_str.replace(str(i), "")
-#     a = a_str.split(',')
-#     # for i, item in enumerate(a):
-#     #     if item == '':
-#     #         del a[i]
-#     for i in a:
-#         if i != '':
-#             result.append(int(i))
-#     return result
 
 def array_diff(a, b): 
     result = []
