@@ -23,19 +23,24 @@
 # Output
 # The minimum number (integer) of operations.
 
-# Special thanks:
-# Thanks for docgunthrop's solution ;-)
-
-import re
 
 
 def array_erasing(lst):
-    result = 0
-    while len(lst) != 0:
-        for i in range(len(lst)):
-            if lst[i] == lst[i+1]:
-                
+    # result = 0
+    # while len(lst) != 0:
+    #     for i in range(len(lst)-1):
+    #         if lst[i] == lst[i+1]:
+    #             print('found')
+    #             del lst[i]
+    #             return lst
 
-array_erasing([0, 1, 1, 1, 0])
+    for i in range(len(lst)-1):
+        if lst[i] == lst[i+1]:
+            for j in range(i, len(lst)):
+                if lst[j] != lst[j+1]:
+                    
+
+    
 
 
+print(array_erasing([0, 1, 1, 1, 0]))
