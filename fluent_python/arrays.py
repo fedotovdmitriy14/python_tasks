@@ -21,3 +21,7 @@ fp = open('floats.bin', 'rb')
 floats2.fromfile(fp, 10**7)   # read 10**7 numbers from fp file
 fp.close()
 print(floats[-1])
+
+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
+
+fedotovdmitriy14ghp_aAb0
